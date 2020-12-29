@@ -1,0 +1,45 @@
+<div class="section gallery_section content">
+    <div class="domes_ad_content">
+      <div class="domes_title gallery_title">
+        <h4 class="dome_subtitle main-color">bel air hotel mont tremblant</h4>
+        <h1 class="header_title dome_header">discover our activities</h1>
+        <h3 class="summary_title">Our extensive team will make sure that our guest enjoy their stay and take advantage of our myriad of <a _ngcontent-ogw-c106="" href="https://belairhoteltremblant.com/amenities-activities/" class="main-color" style="text-decoration: underline;">onsite activities</a></h3>
+      </div>
+    </div>
+    <ul ngbNav #nav="ngbNav" class="nav-list">
+        <li [ngbNavItem]="link.fragment" *ngFor="let link of links" (click)="getResortData(link.fragment)">
+            <a ngbNavLink>{{ link.title }}</a>
+            <ng-template ngbNavContent>
+                <div class="row pt-4">
+                    <div *ngFor="let data of resortdata" class="resport_box col-sm-12 col-md-4">
+                        <div class="lightbox_zoom" (click)="zoomImage(content, data.url)">
+                            <div class="syn-isotope-item-insider">
+                                <img class="simage-lightbx-img"
+                                [src]="data.url" alt="">
+
+                                <!-- <span class="zoom-icon"></span> -->
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="lightbox_props">
+                            <h4 class="resort_name multi-title" title="{{ data.props }}">{{ data.name}}</h4>
+                            <h5 class="resort_val">{{data.props}}</h5>
+                            <p>from <span class="resort_price main-color">${{ data.price }}/</span>night</p>
+                            <button class="btn btn-book">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
+  </div>
+
+
+    <ng-template #content let-modal>
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+    </ng-template>
+
+

@@ -1,0 +1,38 @@
+<div class="gallery_section">
+    <div class="section content">
+        <div class="domes_ad_content">
+            <div class="domes_title gallery_title">
+              <h4 class="dome_subtitle main-color">hotel tremblant</h4>
+              <h1 class="header_title dome_header">gallery</h1>
+              <h3 class="summary_title">Bel Air hotel Mot Tremblant was developed by a Miami Based group that have real estate
+                and hospitality experiences in Miami, Mont Tremblant Canada and Harbour Island Bahamas</h3>
+            </div>
+          </div>
+          <ul ngbNav #nav="ngbNav" class="nav-list">
+            <li [ngbNavItem]="link.fragment" *ngFor="let link of links" (click)="getGalleryData(link.fragment)">
+              <a ngbNavLink>{{ link.title }}</a>
+              <ng-template ngbNavContent>   
+                <div class="row pt-4">
+                        <div *ngFor="let data of galleryData" class="col-sm-12 col-md-3 image-gallery">
+                            <div class="lightbox_zoom" (click)="showImageInGallery(content, data.id)">
+                                <div class="syn-isotope-item-insider">
+                                    <div class="simage-lightbx">
+                                        <div class="simage-lightbx-icon"></div>
+                                    </div>
+                                    <img class="simage-lightbx-img"
+                                        [src]="data.url" alt="">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </ng-template>
+            </li>
+          </ul>
+          <div [ngbNavOutlet]="nav"></div>
+    </div>
+  
+</div>
+
+<ng-template #content let-modal>
+    <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+</ng-template>

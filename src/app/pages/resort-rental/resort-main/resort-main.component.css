@@ -1,0 +1,48 @@
+
+.lightbox_props {
+    padding: 10px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    background-color: #f4f4f4;
+    position: relative;
+    z-index: 4;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+.syn-isotope-item-insider:hover {
+    transform: none;
+}
+
+.resort_name {
+    text-transform: uppercase;
+}
+
+.resort_name:hover {
+    color: rgb(138, 185, 46);
+}
+
+.resort_val {
+    text-transform: uppercase;
+}
+
+.resort_price {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.syn-isotope-item-insider {
+    max-height: 250px;
+}
+
+.syn-isotope-item-insider > img {
+    width: 107%;
+}
+
+.btn-book {
+    background-color: rgb(138, 185, 46);
+    color: #ffffff;
+}
+

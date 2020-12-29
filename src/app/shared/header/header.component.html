@@ -1,0 +1,117 @@
+<header class="main-header navbar-fixed-top" [ngClass]="headerChange ? 'header-white' : ''">
+  <b class="screen-overlay" [ngClass]="{'show': open}" (click)="toggleCanvas()"></b>
+  <nav *ngIf="!headerChange" class="mobile-offcanvas navbar navbar-expand-lg top-bar-bg">
+    <div class="content nav-content">
+      <ul class="navbar-nav">
+        <li class="nav-item active"> <a class="nav-link" routerLink="/influencers" routerLinkActive="main-color" href="#">Influencers </a> </li>
+        <li class="nav-item"><a class="nav-link" href="#"> FAQs </a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> Getting Here </a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> Contact Us </a></li>
+        <button class="btn btn-close float-right"> Book Activities </button>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark content">
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/wp-content/uploads/2020/11/bubbllogo200-wh.png">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="toggleCanvas()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" [ngClass]="{'show': open}">
+      <div class="offcanvas-header mt-3">
+        <button class="btn close-btn float-right" (click)="toggleCanvas()"><i class="material-icons cross">add</i></button>
+      </div>
+
+      <ul class="navbar-nav offset-md-2" [ngClass]="headerChange ? 'header-white' : ''">
+        <li class="nav-item active"> <a class="nav-link router-link" routerLink="/resort-rentals" routerLinkActive="main-color" href="#">All rentals</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle router-link" href="#" data-toggle="dropdown" [ngClass]="headerChange ? 'header-white' : ''"> Domes </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" data-toggle="dropdown"> For 2 people </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href="" routerLink="/for-2-people/dome-shared-sauna"> Dome Shared Sauna</a></li>
+                <li><a class="dropdown-item" href=""> Dome private Sauna</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#" data-toggle="dropdown"> For 4 people </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Mezzanine Dome</a></li>
+                <li><a class="dropdown-item" href=""> Triple Dome</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle router-link" href="#" data-toggle="dropdown" [ngClass]="headerChange ? 'header-white' : ''"> Pods </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Second level 2 with sub </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> Second level 2 with Sub </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle router-link" href="#" data-toggle="dropdown" [ngClass]="headerChange ? 'header-white' : ''"> Pods </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Second level 2 with sub </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> Second level 2 with Sub </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle router-link" href="#" data-toggle="dropdown" [ngClass]="headerChange ? 'header-white' : ''"> Amenities & Activites </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Clubhouse </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href="" routerLink="/club-house/fitness-center"> Fitness center</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> Second level 2 with Sub </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle router-link" href="#" data-toggle="dropdown"> Chalets </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Second level 2 with sub </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> Second level 2 with Sub </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+</header>

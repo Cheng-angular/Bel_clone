@@ -1,0 +1,26 @@
+.fitness-main-section {
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(https://belairhoteltremblant.com/wp-content/uploads/2020/01/crépuscule-6-2.jpg);
+    background-attachment: scroll;
+    background-position: center center;
+}
+.upb_bg_overlay {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.ft-title {
+    color: #002049;
+}
+.btn-amenit {
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background: rgb(0, 32, 73);
+    color: #ffffff;
+}
+
+ngx-gallery {
+    box-shadow: 0px 20px 10px -6px #333;
+}

@@ -1,0 +1,10 @@
+.amenity-title {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.main-content {
+    border-bottom: 1px solid #bcbcbc;
+    border-bottom-style: dashed;
+    width: 100%;
+}
