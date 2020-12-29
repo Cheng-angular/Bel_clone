@@ -3,7 +3,7 @@ export const ResortData = [
     { id: 2, name: 'calafate', props:'1 bedroom', price: '370', value: 's2', url: '../../../../assets/wp-content/uploads/2020/10/Untitled-3g.jpg' },
     { id: 3, name: 'round pod', props:'open space', price: '370', value: 's2', url: '../../../../assets/wp-content/uploads/2020/08/IMG_3165.jpg' },
     { id: 4, name: 'dome shared sauna', props:'open space', price: '330', value: 's2', url: '../../../../assets/wp-content/uploads/2020/08/Spa-1.jpg' },
-    { id: 5, name: 'dome private sauna', props:'open space', price: '370', value: 's2', url: '../../../../assets/wp-content/uploads/2020/08/crépuscule-5.jpg' },
+    { id: 5, name: 'dome private sauna', props:'open space', price: '370', value: 's2', url: '../../../../assets/wp-content/uploads/2020/08/crepuscule-5.jpg' },
     { id: 6, name: 'mickey domes', props:'open space', price: '360', value: 's2', url: '../../../../assets/wp-content/uploads/2020/09/03-White-Dome-1.jpg' },
     { id: 7, name: 'twin dome', props:'1 bedroom', price: '370', value: 's2', url: '../../../../assets/wp-content/uploads/2020/09/DOMOS_FRONTAL_BLANCO-1.jpg' },
     { id: 8, name: 'sky pod', props:'1 bedroom', price: '370', value: 's2', url: '../../../../assets/wp-content/uploads/2020/08/431830-992277.jpg' },
