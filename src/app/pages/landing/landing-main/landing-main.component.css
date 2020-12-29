@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: repeat;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(../../../../assets/wp-content/uploads/2019/12/ext-1.jpg);
+    background-image: url('../../../../assets/wp-content/uploads/2019/12/ext-1.jpg');
     background-attachment: scroll;
 }
 
@@ -147,7 +147,7 @@
 }
 
 .upb_video-src {
-    background-image: url(../../../../assets/wp-content/uploads/2019/12/aérien-2.jpg);
+    background-image: url('../../../../assets/wp-content/uploads/2019/12/acrien-2.jpg');
     opacity: 0.8;
     background-attachment: scroll;
     background-size: cover;

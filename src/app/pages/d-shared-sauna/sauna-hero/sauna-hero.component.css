@@ -1,7 +1,7 @@
 .sauna_hero_section {
     padding: 0;
     height: 50vh;
-    background-image: url(../../../../assets/wp-content/uploads/2020/01/aérien-jour-3.jpg);
+    background-image: url('../../../../assets/wp-content/uploads/2020/01/acrien-jour-3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }

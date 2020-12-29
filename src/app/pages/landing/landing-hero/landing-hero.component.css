@@ -82,7 +82,7 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-image:url(../../../../assets/wp-content/uploads/revslider/classic-carousel1-1/image-8-11.jpg);
+    background-image: url('../../../../assets/wp-content/uploads/2020/10/image-8-1.jpg');
     opacity: 1;
     -webkit-filter: saturate(35%);
     filter: saturate(35%);
@@ -116,7 +116,7 @@
             hsla(0, 0%, 100%, 0.11) 8%,
             rgba(28, 28, 28, 0) 37%
           ),
-            url('../../../../assets/wp-content/uploads/revslider/classic-carousel1-1/image-8-11.jpg');
+            url('../../../../assets/wp-content/uploads/2020/10/image-8-1.jpg');
         background-position: 0px 0px, 0px 0px, 0px 0px, 50% 50%;
         background-size: auto, auto, auto, cover;
         background-repeat: repeat, repeat, repeat, no-repeat;
